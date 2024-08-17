@@ -1,0 +1,21 @@
+---
+import ItemDetail from "../../../../components/ItemDetail.astro";
+import bebidas from "../../../../../public/json/bebidas.json";
+
+const { category, subCategory, product } = Astro.params;
+
+const categoryData = bebidas.find((item) => item.id === category);
+const subCategoryData: any = categoryData?.data.find((sub) => sub.id === subCategory);
+const productData = subCategoryData?.data.find((item: any) => item.id === product);
+
+export async function getStaticPaths() {
+    const tesCategory = bebidas.find((item) => item.id === "tes");
+    return tesCategory?.data.flatMap((sub: any) =>
+        sub.data?.map((item: any) => ({
+            params: { category: "tes", subCategory: sub.id, product: item.id },
+        }))
+    );
+}
+---
+
+<ItemDetail itemData={productData} />

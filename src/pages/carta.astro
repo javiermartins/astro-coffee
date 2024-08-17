@@ -1,0 +1,51 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+
+const categorias = [
+    {
+        path: "/desayunos",
+        label: "Desayunos",
+        img: "/img/desayunos/desayunos.webp",
+    },
+    {
+        path: "/bebidas",
+        label: "Bebidas",
+        img: "/img/bebidas/bebidas.webp",
+    },
+    {
+        path: "/comidas",
+        label: "Comidas",
+        img: "/img/comidas/croque-monsieur.webp",
+    },
+];
+---
+
+<Layout title="Carta">
+    <div class="mb-6">
+        <h1 class="text-3xl font-bold mt-4 mb-4">Carta</h1>
+
+        <p class="text-sm">
+            En nuestra cafetería, cada bebida es una obra maestra artesanal,
+            elaborada con ingredientes frescos y de calidad. El café es nuestra
+            pasión, y queremos compartirlo contigo, estés donde estés.<br /><br
+            />
+            Ya sea tu café favorito para comenzar el día o un bocado delicioso para
+            animarte, ¡tenemos algo especial para ti! Ven y descubre lo que hemos
+            preparado. ¡Te esperamos!
+        </p>
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {
+            categorias.map((categoria) => (
+                <Card
+                    title={categoria.label}
+                    description={null}
+                    img={categoria.img}
+                    path={categoria.path}
+                />
+            ))
+        }
+    </div>
+</Layout>

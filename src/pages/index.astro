@@ -1,0 +1,23 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import categories from "../../public/json/categories.json"
+---
+
+<Layout title="Inicio">
+	<main>
+		<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+			{
+				categories.map((category) => (
+					<Card
+						title={category.label}
+						img={category.img}
+						path={category.path}
+					/>
+				))
+			}
+		</div>
+	</main>
+</Layout>
+
+<style></style>

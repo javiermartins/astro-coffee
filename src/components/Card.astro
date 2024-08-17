@@ -1,0 +1,45 @@
+---
+interface Props {
+    id?: string;
+    title?: string;
+    description?: string | null;
+    img?: string | null;
+    price?: string;
+    path?: string;
+}
+
+const { id, img, title, description, price, path } = Astro.props;
+const descriptionText =
+    description !== null && description?.length > 100
+        ? description?.slice(0, 100) + "..."
+        : description;
+---
+
+<a
+    href={path}
+    class="shadow-md bg-white border-gray-700 hover:scale-105 hover:bg-gray-200 transition flex flex-col"
+>
+    <picture class="flex justify-center">
+        <img
+            class="mb-5 w-full h-60"
+            src={img || "/img/not-found.webp"}
+            alt={`Image for ${title}`}
+        />
+    </picture>
+
+    <header class="p-4 flex-grow">
+        {price && (
+            <span class="text-sm font-semibold mr-2 px-2.5 py-0.5 rounded bg-green-200 text-gray-900">
+                {price}
+            </span>
+        )}
+
+        <h2 class="my-2 text-2xl font-bold tracking-tight text-gray-700">
+            {title}
+        </h2>
+
+        <p class="mb-4 font-light text-gray-400">
+            {descriptionText}
+        </p>
+    </header>
+</a>

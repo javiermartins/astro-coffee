@@ -1,0 +1,16 @@
+---
+import CategoryDetail from "../../components/CategoryDetail.astro";
+import desayunos from "../../../public/json/desayunos.json";
+
+const { category } = Astro.params;
+
+const categoryData = desayunos.find((item) => item.id === category);
+
+export async function getStaticPaths() {
+    return desayunos.map((item) => ({
+        params: { category: item.id },
+    }));
+}
+---
+
+<CategoryDetail categoryData={categoryData} basePath="desayunos" />

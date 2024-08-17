@@ -1,0 +1,9 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import bebidas from "../../../public/json/bebidas.json"
+import CategoryList from "../../components/CategoryList.astro";
+---
+
+<Layout title="Bebidas">
+    <CategoryList data={bebidas} basePath="bebidas" titlePage="Bebidas"/>
+</Layout>

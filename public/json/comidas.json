@@ -1,0 +1,71 @@
+[
+  {
+    "id": "bagels",
+    "title": "Bagels",
+    "img": "/img/comidas/bagel_mixto_jamon.webp",
+    "data": [
+      {
+        "id": "bagel-salmon",
+        "title": "SALMÓN",
+        "description": "Salmón y queso crema",
+        "price": "5,20€",
+        "img": "/img/comidas/bagel_salmon.webp"
+      },
+      {
+        "id": "bagel-mixto-jamon",
+        "title": "MIXTO JAMÓN",
+        "description": "Jamón, queso gouda y york",
+        "price": "5,20€",
+        "img": "/img/comidas/bagel_mixto_jamon.webp"
+      }
+    ]
+  },
+  {
+    "id": "paninis",
+    "title": "Paninis",
+    "img": "/img/comidas/panini.webp",
+    "data": [
+      {
+        "id": "panini-cesar",
+        "title": "CÉSAR",
+        "description": "Pollo, queso gouda y salsa césar",
+        "price": "4,90€"
+      },
+      {
+        "id": "panini-tumaca",
+        "title": "TUMACA",
+        "description": "Jamón y salsa tumaca",
+        "price": "4,90€"
+      }
+    ]
+  },
+  {
+    "id": "croque-monsieur",
+    "title": "Croque Monsieur",
+    "img": "/img/comidas/croque-monsieur.webp",
+    "data": [
+      {
+        "id": "croque-monsieur",
+        "title": "Croque Monsieur",
+        "price": "4,70€",
+        "img": "/img/comidas/croque-monsieur.webp"
+      }
+    ]
+  },
+  {
+    "id": "quiche",
+    "title": "Quiche",
+    "data": [
+      {
+        "id": "quiche-jamon-queso",
+        "title": "Jamón y Queso",
+        "price": "4,20€"
+      },
+      {
+        "id": "quiche-tres-quesos",
+        "title": "Tres Quesos",
+        "price": "4,20€"
+      }
+    ]
+  }
+]

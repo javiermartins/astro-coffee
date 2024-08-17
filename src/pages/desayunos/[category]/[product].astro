@@ -1,0 +1,19 @@
+---
+import ItemDetail from "../../../components/ItemDetail.astro";
+import desayunos from "../../../../public/json/desayunos.json";
+
+const { category, product } = Astro.params;
+
+const categoryData = desayunos.find((item) => item.id === category);
+const productData = categoryData?.data.find((detalle) => detalle.id === product);
+
+export async function getStaticPaths() {
+    return desayunos.flatMap((category) =>
+        category.data.map((item) => ({
+            params: { category: category.id, product: item.id },
+        }))
+    );
+}
+---
+
+<ItemDetail itemData={productData} />
