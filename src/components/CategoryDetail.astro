@@ -22,6 +22,7 @@ const { categoryData, basePath } = Astro.props;
                 description={detalle.description}
                 price={detalle.price}
                 img={detalle.img}
+                alergenos={detalle.alergenos}
                 path={`/${basePath}/${categoryData.id}/${detalle.id}`}
             />
         ))}

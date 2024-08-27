@@ -10,9 +10,29 @@ const { itemData } = Astro.props;
 
 <Layout title={itemData?.title}>
     <div class="max-w-lg mx-auto">
-        <img src={itemData?.img || "/img/not-found.webp"} alt={itemData?.title} class="w-full h-auto rounded-xl" />
-        <h1 class="text-3xl font-bold mt-4">{itemData?.title}</h1>
+        <h1 class="text-3xl font-bold mb-4">{itemData?.title}</h1>
+        <img
+            src={itemData?.img || "/img/not-found.webp"}
+            alt={itemData?.title}
+            class="w-full h-auto rounded-xl"
+        />
         <p class="text-lg mt-2">{itemData?.description}</p>
         <p class="text-xl font-semibold mt-4">{itemData?.price}</p>
+        <div class="mt-4">
+            {itemData?.alergenos && (
+                <div>
+                  <h1 class="text-xl font-bold mt-4 mb-4">Alérgenos</h1>
+                  {itemData.alergenos.map((alergeno: any) => (
+                    <div 
+                      class="border border-inherit ml-2 inline-flex items-center text-base font-medium px-2.5 py-0.5 rounded-full" 
+                      style={`background: ${alergeno.background};`}
+                    >
+                      <alergeno.icon color={alergeno.color} width="24px" height="24px" />
+                      <span class="ml-4 text-blue-800">{alergeno.label}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+        </div>
     </div>
 </Layout>

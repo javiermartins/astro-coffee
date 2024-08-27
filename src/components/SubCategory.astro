@@ -21,6 +21,7 @@ const { category, subCategoryData } = Astro.props;
                 title={product.title}
                 description={product.description}
                 img={product.img}
+                alergenos={product.alergenos}
                 path={`/bebidas/${category}/${subCategoryData.id}/${product.id}`}
             />
         ))}

@@ -1,4 +1,6 @@
-[
+import ALERGENOS from './alergenos.ts';
+
+const bebidas = [
     {
         "id": "tes",
         "title": "Tés",
@@ -7,34 +9,35 @@
             {
                 "id": "te-rojo",
                 "title": "Té Rojo",
+                "img": "/img/bebidas/te/te-rojo.webp",
                 "data": [
                     {
                         "id": "rojo-china-pu-ehr-frutas-royal",
                         "title": "Rojo China Pu-Ehr Frutas Royal",
                         "description": "Pasas, papaya, pétalos de rosa, frambuesa, hibisco, aroma y té.",
                         "price": "3,20€",
-                        "img": "/img/bebidas/rojo_china_pu_ehr_frutas_royal.webp"
+                        "img": "/img/bebidas/te/te-rojo.webp",
                     },
                     {
                         "id": "rojo-china-pu-ehr-canela-limon",
                         "title": "Rojo China Pu-Ehr Canela y Limón",
                         "description": "Trozos de canela, cáscara de limón, aroma y té.",
                         "price": "3,20€",
-                        "img": "/img/bebidas/rojo_china_pu_ehr_canela_limon.webp"
+                        "img": "/img/bebidas/te/te-rojo.webp",
                     },
                     {
                         "id": "rojo-china-pu-ehr-naranja",
                         "title": "Rojo China Pu-Ehr Naranja",
                         "description": "Trozos de naranja, aroma y té.",
                         "price": "3,20€",
-                        "img": "/img/bebidas/rojo_china_pu_ehr_naranja.webp"
+                        "img": "/img/bebidas/te/te-rojo.webp",
                     },
                     {
                         "id": "rojo-china-pu-ehr-garden",
                         "title": "Rojo China Pu-Ehr Garden",
                         "description": "Cáscara de naranja, azahar, frambuesa, pétalos de rosa y té.",
                         "price": "3,20€",
-                        "img": "/img/bebidas/rojo_china_pu_ehr_garden.webp"
+                        "img": "/img/bebidas/te/te-rojo.webp",
                     }
                 ]
             },
@@ -46,15 +49,13 @@
                         "id": "ruta-de-seda",
                         "title": "Ruta de Seda",
                         "description": "Flor de caléndula, jazmín, aciano, papaya, manzana, mora, aroma y té.",
-                        "price": "3,70€",
-                        "img": "/img/bebidas/ruta_de_seda.webp"
+                        "price": "3,70€"
                     },
                     {
                         "id": "frutas-royal",
                         "title": "Frutas Royal",
                         "description": "Trozos de fresa, frambuesa, papaya, pasas, arándanos, pétalos de rosa, aroma y té.",
-                        "price": "3,70€",
-                        "img": "/img/bebidas/frutas_royal.webp"
+                        "price": "3,70€"
                     }
                 ]
             },
@@ -66,22 +67,19 @@
                         "id": "frutas-royal",
                         "title": "Frutas Royal",
                         "description": "Trozos de papaya, mango, hibisco, rosa, frambuesa, fresa, pasas, aroma y té.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/frutas_royal.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "marroqui-hierbabuena",
                         "title": "Marroquí Hierbabuena",
                         "description": "Té especial con hierbabuena.",
-                        "price": "3,20€",
-                        "img": "/img/bebidas/marroqui_hierbabuena.webp"
+                        "price": "3,20€"
                     },
                     {
                         "id": "best-harvest",
                         "title": "Best Harvest",
                         "description": "Té Verde Sencha, trozos de canela, naranja, cardamomo, anís, jengibre, pimienta, clavo y aromas.",
-                        "price": "3,20€",
-                        "img": "/img/bebidas/best_harvest.webp"
+                        "price": "3,20€"
                     }
                 ]
             },
@@ -93,50 +91,43 @@
                         "id": "turco",
                         "title": "Turco",
                         "description": "Clásico, aromático y fuerte.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/turco.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "chai",
                         "title": "Chai",
                         "description": "Té negro con especias.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/chai.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "regaliz",
                         "title": "Regaliz",
                         "description": "Flor de malva, vainilla, aroma de regaliz y té.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/regaliz.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "fresa-y-nata",
                         "title": "Fresa y Nata",
                         "description": "Trozos de fresa, nata y té.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/fresa_y_nata.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "frutas-del-bosque",
                         "title": "Frutas del Bosque",
                         "description": "Aroma de bayas de endrino, hojas de zarzamora, arándanos, aroma y té.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/frutas_del_bosque.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "trufa-y-chocolate",
                         "title": "Trufa y Chocolate",
                         "description": "Trozos de chocolate blanco y negro, nueces de macadamia, aroma y té.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/trufa_y_chocolate.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "earl-grey",
                         "title": "Earl Grey",
                         "description": "Aroma de bergamota, pétalos de aciano y té.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/earl_grey.webp"
+                        "price": "2,70€"
                     }
                 ]
             },
@@ -148,36 +139,31 @@
                         "id": "cha-y-massa",
                         "title": "Cha y Massa",
                         "description": "Trozos de canela, limón, cardamomo, anís, jengibre, pimienta, clavo y té rooibos.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/cha_y_massa.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "dr-livingston",
                         "title": "Dr. Livingston",
                         "description": "Pétalos de rosa, jazmín, mango, papaya, plátano, coco y té rooibos.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/dr_livingston.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "relaja-te",
                         "title": "Relaja-Té",
                         "description": "Tila, lemongrass, limón, girasol, azahar, melisa, aciano, aroma y té rooibos.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/relaja_te.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "tiramisu",
                         "title": "Tiramisú",
                         "description": "Chocolate blanco, negro, manzanilla, cacao, caramelo, aromas naturales y té rooibos.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/tiramisu.webp"
+                        "price": "2,70€"
                     },
                     {
                         "id": "frutas-rojas",
                         "title": "Frutas Rojas",
                         "description": "Pasas, fresas, pétalos de rosa, frambuesa, grosella, bayas, aroma y té rooibos.",
-                        "price": "2,70€",
-                        "img": "/img/bebidas/frutas_rojas.webp"
+                        "price": "2,70€"
                     }
                 ]
             },
@@ -189,26 +175,23 @@
                         "id": "manzanilla",
                         "title": "Manzanilla",
                         "description": "Flor de manzanilla.",
-                        "price": "2,20€",
-                        "img": "/img/bebidas/manzanilla.webp"
+                        "price": "2,20€"
                     },
                     {
                         "id": "poleo",
                         "title": "Poleo",
                         "description": "Poleo.",
-                        "price": "2,20€",
-                        "img": "/img/bebidas/poleo.webp"
+                        "price": "2,20€"
                     },
                     {
                         "id": "tila",
                         "title": "Tila",
                         "description": "",
-                        "price": "",
-                        "img": "/img/bebidas/tila.webp"
+                        "price": ""
                     }
                 ]
             }
-            
+
         ]
     },
     {
@@ -436,4 +419,6 @@
             }
         ]
     }
-]
+];
+
+export default bebidas;

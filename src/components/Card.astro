@@ -6,9 +6,10 @@ interface Props {
     img?: string | null;
     price?: string;
     path?: string;
+    alergenos: any[]; 
 }
 
-const { id, img, title, description, price, path } = Astro.props;
+const { id, img, title, description, price, alergenos, path } = Astro.props;
 const descriptionText =
     description !== null && description?.length > 100
         ? description?.slice(0, 100) + "..."
@@ -41,5 +42,15 @@ const descriptionText =
         <p class="mb-4 font-light text-gray-400">
             {descriptionText}
         </p>
+
+        <div>
+            {
+                alergenos?.map((alergeno: any) => (
+                    <div class="ml-1 inline-flex items-center text-base font-medium p-1 rounded-full" style={`background: ${alergeno.background}`}>
+                        <alergeno.icon color={alergeno.color} width="24px" height="24px"/>
+                    </div>
+                ))
+            }
+        </div>
     </header>
 </a>
