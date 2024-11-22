@@ -1,15 +1,15 @@
 ---
 import CategoryDetail from "../../components/CategoryDetail.astro";
-import comidas from "../../../public/json/comidas.json";
+import comidas from "../../data/comidas.ts";
 
 const { category } = Astro.params;
 
 const categoryData = comidas.find((item) => item.id === category);
 
 export async function getStaticPaths() {
-    return comidas.map((item) => ({
-        params: { category: item.id },
-    }));
+  return comidas.map((item) => ({
+    params: { category: item.id },
+  }));
 }
 ---
 

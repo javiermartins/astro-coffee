@@ -10,52 +10,52 @@ const categoryData = bebidas.find((item) => item.id === category);
 
 // Intentamos encontrar tanto subcategoría como producto
 const subCategoryData = categoryData?.data.find(
-    (sub) => sub.data && sub.id === productOrSubcategory,
+  (sub) => sub.data && sub.id === productOrSubcategory
 );
 const productData = subCategoryData
-    ? null
-    : categoryData?.data.find((item) => item.id === productOrSubcategory);
+  ? null
+  : categoryData?.data.find((item) => item.id === productOrSubcategory);
 
 export async function getStaticPaths() {
-    return bebidas.flatMap((category) => {
-        if (category.id === "tes") {
-            // Para subcategorías en "tés"
-            return category.data.map((sub) => ({
-                params: { category: category.id, productOrSubcategory: sub.id },
-            }));
-        } else {
-            // Para productos directos
-            return category.data.map((item) => ({
-                params: {
-                    category: category.id,
-                    productOrSubcategory: item.id,
-                },
-            }));
-        }
-    });
+  return bebidas.flatMap((category) => {
+    if (category.id === "tes") {
+      // Para subcategorías en "tés"
+      return category.data.map((sub) => ({
+        params: { category: category.id, productOrSubcategory: sub.id },
+      }));
+    } else {
+      // Para productos directos
+      return category.data.map((item) => ({
+        params: {
+          category: category.id,
+          productOrSubcategory: item.id,
+        },
+      }));
+    }
+  });
 }
 ---
 
 {
-    subCategoryData ? (
-        <Layout title={subCategoryData.title}>
-            <h2 class="mb-4 text-3xl tracking-tight font-extrabold">
-                {subCategoryData?.title}
-            </h2>
-            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {subCategoryData.data.map((product: any) => (
-                    <Card
-                        id={product.id}
-                        title={product.title}
-                        description={product.description}
-                        img={product.img}
-                        alergenos={product.alergenos}
-                        path={`/bebidas/${category}/${subCategoryData.id}/${product.id}`}
-                    />
-                ))}
-            </div>
-        </Layout>
-    ) : (
-        <ItemDetail itemData={productData} />
-    )
+  subCategoryData ? (
+    <Layout title={subCategoryData.title}>
+      <h2 class="mb-4 text-3xl tracking-tight font-extrabold">
+        {subCategoryData?.title}
+      </h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {subCategoryData.data.map((product: any) => (
+          <Card
+            id={product.id}
+            title={product.title}
+            description={product.description}
+            img={product.img}
+            alergenos={product.alergenos}
+            path={`/bebidas/${category}/${subCategoryData.id}/${product.id}`}
+          />
+        ))}
+      </div>
+    </Layout>
+  ) : (
+    <ItemDetail itemData={productData} />
+  )
 }

@@ -1,9 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import CategoryList from "../../components/CategoryList.astro";
-import comidas from "../../../public/json/comidas.json";
+import comidas from "../../data/comidas.ts";
 ---
 
 <Layout title="Comidas">
-    <CategoryList data={comidas} basePath="comidas" titlePage="Comidas" />
+  <CategoryList data={comidas} basePath="comidas" titlePage="Comidas" />
 </Layout>

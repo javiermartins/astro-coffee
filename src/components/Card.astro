@@ -1,56 +1,61 @@
 ---
 interface Props {
-    id?: string;
-    title?: string;
-    description?: string | null;
-    img?: string | null;
-    price?: string;
-    path?: string;
-    alergenos: any[]; 
+  id?: string;
+  title?: string;
+  description?: string | null;
+  img?: string | null;
+  price?: string;
+  path?: string;
+  alergenos: any[];
 }
 
 const { id, img, title, description, price, alergenos, path } = Astro.props;
 const descriptionText =
-    description !== null && description?.length > 100
-        ? description?.slice(0, 100) + "..."
-        : description;
+  description !== null && description?.length > 100
+    ? description?.slice(0, 100) + "..."
+    : description;
 ---
 
 <a
-    href={path}
-    class="shadow-md bg-white border-gray-700 hover:scale-105 hover:bg-gray-200 transition flex flex-col"
+  href={path}
+  class="shadow-md bg-white border-gray-700 hover:scale-105 hover:bg-gray-200 transition flex flex-col"
 >
-    <picture class="flex justify-center">
-        <img
-            class="mb-5 w-full h-60"
-            src={img || "/img/not-found.webp"}
-            alt={`Image for ${title}`}
-        />
-    </picture>
+  <picture class="flex justify-center">
+    <img
+      class="mb-5 w-full h-60"
+      src={img || "/img/not-found.webp"}
+      alt={`Image for ${title}`}
+    />
+  </picture>
 
-    <header class="p-4 flex-grow">
-        {price && (
-            <span class="text-sm font-semibold mr-2 px-2.5 py-0.5 rounded bg-green-200 text-gray-900">
-                {price}
-            </span>
-        )}
+  <header class="p-4 flex-grow">
+    {
+      price && (
+        <span class="text-sm font-semibold mr-2 px-2.5 py-0.5 rounded bg-green-200 text-gray-900">
+          {price}
+        </span>
+      )
+    }
 
-        <h2 class="my-2 text-2xl font-bold tracking-tight text-gray-700">
-            {title}
-        </h2>
+    <h2 class="my-2 text-2xl font-bold tracking-tight text-gray-700">
+      {title}
+    </h2>
 
-        <p class="mb-4 font-light text-gray-400">
-            {descriptionText}
-        </p>
+    <p class="mb-4 font-light text-gray-400">
+      {descriptionText}
+    </p>
 
-        <div>
-            {
-                alergenos?.map((alergeno: any) => (
-                    <div class="ml-1 inline-flex items-center text-base font-medium p-1 rounded-full" style={`background: ${alergeno.background}`}>
-                        <alergeno.icon color={alergeno.color} width="24px" height="24px"/>
-                    </div>
-                ))
-            }
-        </div>
-    </header>
+    <div>
+      {
+        alergenos?.map((alergeno: any) => (
+          <div
+            class="ml-1 inline-flex items-center text-base font-medium p-1 rounded-full"
+            style={`background: ${alergeno.background}`}
+          >
+            <alergeno.icon color={alergeno.color} width="24px" height="24px" />
+          </div>
+        ))
+      }
+    </div>
+  </header>
 </a>
