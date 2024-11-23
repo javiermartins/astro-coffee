@@ -229,219 +229,210 @@ const bebidas = [
                 "id": "batido-vainilla",
                 "title": "Vanilla",
                 "description": "",
-                "price": "4,70€"
+                "price": "4,70€",
+                "img": "/img/bebidas/batidos/batido_vainilla.webp",
             },
             {
                 "id": "batido-chocolate",
                 "title": "Chocolate",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido-chocolate.webp"
+                "img": "/img/bebidas/batidos/batido_chocolate.webp"
             },
             {
                 "id": "batido-frutas-del-bosque",
                 "title": "Frutas del bosque",
                 "description": "",
-                "price": "4,70€"
+                "price": "4,70€",
+                "img": "/img/bebidas/batidos/batido_frutas_bosque.webp"
             },
             {
                 "id": "batido-fresa",
                 "title": "Fresa",
                 "description": "",
-                "price": "4,70€"
+                "price": "4,70€",
+                "img": "/img/bebidas/batidos/batido_fresa.webp"
             },
             {
                 "id": "batido-matcha-yogurt",
                 "title": "Matcha y yogurt",
                 "description": "",
-                "price": "4,70€"
+                "price": "4,70€",
+                "img": "/img/bebidas/batidos/batido_matcha_yogurt.webp"
             },
             {
                 "id": "batido-melocoton",
                 "title": "Melocotón",
                 "description": "",
-                "price": "4,70€"
+                "price": "4,70€",
+                "img": "/img/bebidas/batidos/batido_melocoton.webp"
             },
             {
                 "id": "batido-oreo-cream",
                 "title": "Oreo cream",
                 "description": "",
-                "price": "4,70€"
+                "price": "4,70€",
+                "img": "/img/bebidas/batidos/batido_oreo.webp"
             },
             {
                 "id": "batido-leche-merengada",
                 "title": "Leche merengada",
                 "description": "",
-                "price": "4,70€"
+                "price": "4,70€",
+                "img": "/img/bebidas/batidos/batido_leche_merengada.webp"
             },
             {
                 "id": "batido-lotus-biscoff",
                 "title": "Lotus biscoff",
                 "description": "",
-                "price": "4,70€"
-            }
-        ]
-    },
-    {
-        "id": "cervezas",
-        "title": "Cervezas",
-        "data": [
-            {
-                "id": "mahou-5-estrellas",
-                "title": "Mahou 5 Estrellas",
-                "price": "3,00€"
-            },
-            {
-                "id": "mahou-tostada-0-0",
-                "title": "Mahou Tostada 0,0",
-                "price": "3,00€"
-            },
-            {
-                "id": "mahou-radler",
-                "title": "Mahou Radler",
-                "price": "3,00€"
-            },
-            {
-                "id": "mahou-rose",
-                "title": "Mahou Rosé",
-                "price": "3,00€"
-            },
-            {
-                "id": "mahou-maestra",
-                "title": "Mahou Maestra",
-                "price": "3,50€"
+                "price": "4,70€",
+                "img": "/img/bebidas/batidos/batido_lotus.webp"
             }
         ]
     },
     {
         "id": "refrescos",
         "title": "Refrescos",
+        "img": "/img/bebidas/refrescos/refrescos.webp",
         "data": [
             {
                 "id": "coca-cola",
                 "title": "Coca-cola",
-                "price": "2,80€"
+                "price": "2,80€",
+                "img": "/img/bebidas/refrescos/coca_cola.webp",
             },
             {
                 "id": "fanta",
                 "title": "Fanta",
-                "price": "2,80€"
+                "price": "2,80€",
+                "img": "/img/bebidas/refrescos/fanta.webp",
             },
             {
                 "id": "sprite",
                 "title": "Sprite",
-                "price": "2,80€"
-            },
-            {
-                "id": "bitter",
-                "title": "Bitter",
-                "price": "2,80€"
+                "price": "2,80€",
+                "img": "/img/bebidas/refrescos/sprite.webp",
             },
             {
                 "id": "trina",
                 "title": "Trina",
-                "price": "2,80€"
+                "price": "2,80€",
+                "img": "/img/bebidas/refrescos/trina.webp",
             },
             {
                 "id": "tonica",
                 "title": "Tónica",
-                "price": "2,80€"
-            },
-            {
-                "id": "aquarius",
-                "title": "Aquarius",
-                "price": "3,00€"
+                "price": "2,80€",
+                "img": "/img/bebidas/refrescos/tonica.webp",
             },
             {
                 "id": "nestea",
                 "title": "Nestea",
-                "price": "3,00€"
+                "price": "3,00€",
+                "img": "/img/bebidas/refrescos/nestea.webp",
             },
             {
                 "id": "agua-con-gas",
                 "title": "Agua con Gas",
-                "price": "2,80€"
+                "price": "2,80€",
+                "img": "/img/bebidas/refrescos/agua_gas.webp",
             },
             {
                 "id": "agua-sin-gas",
                 "title": "Agua sin Gas",
-                "price": "1,50€"
+                "price": "1,50€",
+                "img": "/img/bebidas/refrescos/agua.webp",
             },
             {
                 "id": "zumo-pina",
                 "title": "Zumo Piña",
-                "price": "2,80€"
+                "price": "2,80€",
+                "img": "/img/bebidas/refrescos/zumo_pina.webp",
             },
             {
                 "id": "zumo-melocoton",
                 "title": "Zumo Melocotón",
-                "price": "2,80€"
+                "price": "2,80€",
+                "img": "/img/bebidas/refrescos/zumo_melocoton.webp",
             }
         ]
     },
     {
         "id": "granizados",
         "title": "Granizados",
+        "img": "/img/bebidas/granizados/granizados.webp",
         "data": [
             {
                 "id": "menta",
                 "title": "Menta",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_menta.webp",
             },
             {
                 "id": "platano",
                 "title": "Plátano",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_platano.webp",
             },
             {
                 "id": "fresa",
                 "title": "Fresa",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_fresa.webp",
             },
             {
                 "id": "melon",
                 "title": "Melón",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_melon.webp",
             },
             {
                 "id": "pina-coco",
                 "title": "Piña y Coco",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_pina_coco.webp",
             },
             {
                 "id": "chicle",
                 "title": "Chicle",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_chicle.webp",
             },
             {
                 "id": "blue-tropic",
                 "title": "Blue Tropic",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_blue_tropic.webp",
             },
             {
                 "id": "frutas-bosque",
                 "title": "Frutas del Bosque",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_frutas_bosque.webp",
             },
             {
                 "id": "kiwi",
                 "title": "Kiwi",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_kiwi.webp",
             },
             {
                 "id": "naranja",
                 "title": "Naranja",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_naranja.webp",
             },
             {
                 "id": "limon",
                 "title": "Limón",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_limon.webp",
             },
             {
                 "id": "cafe",
                 "title": "Café",
-                "price": "3,90€"
+                "price": "3,90€",
+                "img": "/img/bebidas/granizados/granizado_cafe.webp",
             }
         ]
     }
