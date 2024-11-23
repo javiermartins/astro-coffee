@@ -9,11 +9,11 @@ interface Props {
   alergenos: any[];
 }
 
-const { id, img, title, description, price, alergenos, path } = Astro.props;
+const { img, title, description, price, alergenos, path } = Astro.props;
 const descriptionText =
-  description !== null && description?.length > 100
-    ? description?.slice(0, 100) + "..."
-    : description;
+  description && description.length && description.length > 100
+    ? description.slice(0, 100) + "..."
+    : description || "";
 ---
 
 <a

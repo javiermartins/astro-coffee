@@ -9,8 +9,8 @@ const { category, productOrSubcategory } = Astro.params;
 const categoryData = bebidas.find((item) => item.id === category);
 
 // Intentamos encontrar tanto subcategoría como producto
-const subCategoryData = categoryData?.data.find(
-  (sub) => sub.data && sub.id === productOrSubcategory
+const subCategoryData: any = categoryData?.data.find(
+  (sub: any) => sub.data && sub.id === productOrSubcategory
 );
 const productData = subCategoryData
   ? null
