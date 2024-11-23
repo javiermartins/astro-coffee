@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 
-<a href="https://astro-coffee-shop.netlify.app/">
+<a href="https://astro-coffee-shop.netlify.app/" target="_blank">
   <img src="public/img/readme.png" alt="Logo" style="border-radius: 10px;" />
 </a>
 
