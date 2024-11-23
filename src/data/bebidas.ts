@@ -102,6 +102,7 @@ const bebidas = [
                         "description": "Clásico, aromático y fuerte.",
                         "price": "2,70€",
                         "img": "/img/bebidas/te/te_negro.webp",
+                        "alergenos": [ALERGENOS.FRUTOS]
                     },
                     {
                         "id": "chai",
@@ -144,6 +145,7 @@ const bebidas = [
                         "description": "Aroma de bergamota, pétalos de aciano y té.",
                         "price": "2,70€",
                         "img": "/img/bebidas/te/te_negro.webp",
+                        "alergenos": [ALERGENOS.SOJA, ALERGENOS.LACTEOS]
                     }
                 ]
             },
@@ -179,6 +181,7 @@ const bebidas = [
                         "description": "Chocolate blanco, negro, manzanilla, cacao, caramelo, aromas naturales y té rooibos.",
                         "price": "2,70€",
                         "img": "/img/bebidas/te/rooibos.webp",
+                        "alergenos": [ALERGENOS.LACTEOS]
                     },
                     {
                         "id": "frutas-rojas",
@@ -231,62 +234,71 @@ const bebidas = [
                 "description": "",
                 "price": "4,70€",
                 "img": "/img/bebidas/batidos/batido_vainilla.webp",
+                "alergenos": [ALERGENOS.LACTEOS]
             },
             {
                 "id": "batido-chocolate",
                 "title": "Chocolate",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido_chocolate.webp"
+                "img": "/img/bebidas/batidos/batido_chocolate.webp",
+                "alergenos": [ALERGENOS.LACTEOS]
             },
             {
                 "id": "batido-frutas-del-bosque",
                 "title": "Frutas del bosque",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido_frutas_bosque.webp"
+                "img": "/img/bebidas/batidos/batido_frutas_bosque.webp",
+                "alergenos": [ALERGENOS.LACTEOS]
             },
             {
                 "id": "batido-fresa",
                 "title": "Fresa",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido_fresa.webp"
+                "img": "/img/bebidas/batidos/batido_fresa.webp",
+                "alergenos": [ALERGENOS.LACTEOS]
             },
             {
                 "id": "batido-matcha-yogurt",
                 "title": "Matcha y yogurt",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido_matcha_yogurt.webp"
+                "img": "/img/bebidas/batidos/batido_matcha_yogurt.webp",
+                "alergenos": [ALERGENOS.LACTEOS]
             },
             {
                 "id": "batido-melocoton",
                 "title": "Melocotón",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido_melocoton.webp"
+                "img": "/img/bebidas/batidos/batido_melocoton.webp",
+                "alergenos": [ALERGENOS.LACTEOS]
             },
             {
                 "id": "batido-oreo-cream",
                 "title": "Oreo cream",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido_oreo.webp"
+                "img": "/img/bebidas/batidos/batido_oreo.webp",
+                "alergenos": [ALERGENOS.LACTEOS, ALERGENOS.GLUTEN, ALERGENOS.SOJA]
             },
             {
                 "id": "batido-leche-merengada",
                 "title": "Leche merengada",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido_leche_merengada.webp"
+                "img": "/img/bebidas/batidos/batido_leche_merengada.webp",
+                "alergenos": [ALERGENOS.LACTEOS, ALERGENOS.GLUTEN, ALERGENOS.SOJA]
             },
             {
                 "id": "batido-lotus-biscoff",
                 "title": "Lotus biscoff",
                 "description": "",
                 "price": "4,70€",
-                "img": "/img/bebidas/batidos/batido_lotus.webp"
+                "img": "/img/bebidas/batidos/batido_lotus.webp",
+                "alergenos": [ALERGENOS.LACTEOS, ALERGENOS.GLUTEN, ALERGENOS.SOJA]
             }
         ]
     },
@@ -391,6 +403,7 @@ const bebidas = [
                 "title": "Piña y Coco",
                 "price": "3,90€",
                 "img": "/img/bebidas/granizados/granizado_pina_coco.webp",
+                "alergenos": [ALERGENOS.LACTEOS]
             },
             {
                 "id": "chicle",
@@ -433,7 +446,8 @@ const bebidas = [
                 "title": "Café",
                 "price": "3,90€",
                 "img": "/img/bebidas/granizados/granizado_cafe.webp",
-            }
+                "alergenos": [ALERGENOS.LACTEOS]
+            },
         ]
     }
 ];
